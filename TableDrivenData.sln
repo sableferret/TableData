@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableDrivenData", "TableDrivenData\TableDrivenData.csproj", "{A8C6851A-191E-46C8-91F1-9DD54638A927}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableDrivenData.Lib", "TableDrivenData.Lib\TableDrivenData.Lib.csproj", "{A3CA0490-931B-425E-A7F0-72F9A8B93865}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableDrivenData.Lib.Tests", "TableDrivenData.Lib.Tests\TableDrivenData.Lib.Tests.csproj", "{490B92CE-92E0-4F99-AFE1-259756CF4694}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{64BA6781-7E35-4EF3-9FC1-3A851BFE8457}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		TableDrivenData.vsmdi = TableDrivenData.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = TableDrivenData.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8C6851A-191E-46C8-91F1-9DD54638A927}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{A8C6851A-191E-46C8-91F1-9DD54638A927}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{A8C6851A-191E-46C8-91F1-9DD54638A927}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{A8C6851A-191E-46C8-91F1-9DD54638A927}.Debug|x86.ActiveCfg = Debug|x86
+		{A8C6851A-191E-46C8-91F1-9DD54638A927}.Debug|x86.Build.0 = Debug|x86
+		{A8C6851A-191E-46C8-91F1-9DD54638A927}.Release|Any CPU.ActiveCfg = Release|x86
+		{A8C6851A-191E-46C8-91F1-9DD54638A927}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{A8C6851A-191E-46C8-91F1-9DD54638A927}.Release|Mixed Platforms.Build.0 = Release|x86
+		{A8C6851A-191E-46C8-91F1-9DD54638A927}.Release|x86.ActiveCfg = Release|x86
+		{A8C6851A-191E-46C8-91F1-9DD54638A927}.Release|x86.Build.0 = Release|x86
+		{A3CA0490-931B-425E-A7F0-72F9A8B93865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3CA0490-931B-425E-A7F0-72F9A8B93865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3CA0490-931B-425E-A7F0-72F9A8B93865}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A3CA0490-931B-425E-A7F0-72F9A8B93865}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A3CA0490-931B-425E-A7F0-72F9A8B93865}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A3CA0490-931B-425E-A7F0-72F9A8B93865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3CA0490-931B-425E-A7F0-72F9A8B93865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3CA0490-931B-425E-A7F0-72F9A8B93865}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A3CA0490-931B-425E-A7F0-72F9A8B93865}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A3CA0490-931B-425E-A7F0-72F9A8B93865}.Release|x86.ActiveCfg = Release|Any CPU
+		{490B92CE-92E0-4F99-AFE1-259756CF4694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{490B92CE-92E0-4F99-AFE1-259756CF4694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{490B92CE-92E0-4F99-AFE1-259756CF4694}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{490B92CE-92E0-4F99-AFE1-259756CF4694}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{490B92CE-92E0-4F99-AFE1-259756CF4694}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{490B92CE-92E0-4F99-AFE1-259756CF4694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{490B92CE-92E0-4F99-AFE1-259756CF4694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{490B92CE-92E0-4F99-AFE1-259756CF4694}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{490B92CE-92E0-4F99-AFE1-259756CF4694}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{490B92CE-92E0-4F99-AFE1-259756CF4694}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

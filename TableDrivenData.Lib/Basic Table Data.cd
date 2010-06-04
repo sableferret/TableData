@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NickField.TableDrivenData.Lib.TableColumnDescriptor">
+    <Position X="8" Y="6.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAJAAwAgAQQAAAAAAAQAAAAAQAAAACAAAAAAI=</HashCode>
+      <FileName>TableColumnDescriptor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="NickField.TableDrivenData.Lib.IDataProvider">
+    <Position X="3.75" Y="2.75" Width="2" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Views" Type="NickField.TableDrivenData.Lib.ITableView" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="2.75" />
+        <Point X="4.5" Y="2.425" />
+        <Point X="6.75" Y="2.425" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="RowRepository" Type="NickField.TableDrivenData.Lib.IConstituentRowRepository" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.75" Y="3.525" />
+        <Point X="1.875" Y="3.525" />
+        <Point X="1.875" Y="2.502" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAACAEAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>IDataProvider.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="RowRepository" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Views" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+  <Interface Name="NickField.TableDrivenData.Lib.ITableView">
+    <Position X="6.75" Y="1.5" Width="1.5" />
+    <AssociationLine Name="TableQuery" Type="NickField.TableDrivenData.Lib.ITableQuery" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.938" Y="2.733" />
+        <Point X="7.938" Y="4.375" />
+        <Point X="10" Y="4.375" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAABAIAAAAAAgAAAA=</HashCode>
+      <FileName>ITableView.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Data" />
+      <Property Name="TableQuery" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Columns" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+  <Interface Name="NickField.TableDrivenData.Lib.IColumn">
+    <Position X="9.25" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAgAAQAAAAAQAQIAAAAEAAAAQAAAAAAAAA=</HashCode>
+      <FileName>IColumn.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NickField.TableDrivenData.Lib.IRowBinding">
+    <Position X="6" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IRowBinding.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="System.ComponentModel.IBindingList">
+    <Position X="0.75" Y="4" Width="2" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="System.ComponentModel.ITypedList">
+    <Position X="5.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="NickField.TableDrivenData.Lib.IRowData">
+    <Position X="10.5" Y="7" Width="1.75" />
+    <AssociationLine Name="ConstituentRows" Type="NickField.TableDrivenData.Lib.IConstituentRow" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.25" Y="8.688" />
+        <Point X="15.625" Y="8.688" />
+        <Point X="15.625" Y="8.242" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.12" Y="0.195" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>IRowData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ConstituentRows" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+  <Interface Name="NickField.TableDrivenData.Lib.IConstituentRow">
+    <Position X="15" Y="6.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Table" Type="NickField.TableDrivenData.Lib.ITable" FixedToPoint="true">
+      <Path>
+        <Point X="15.438" Y="6.75" />
+        <Point X="15.438" Y="4.045" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Cells" Type="NickField.TableDrivenData.Lib.ICellData" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15" Y="7.625" />
+        <Point X="13.938" Y="7.625" />
+        <Point X="13.938" Y="5.233" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAIAQAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>IConstituentRow.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Table" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Cells" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+  <Interface Name="NickField.TableDrivenData.Lib.ICellData">
+    <Position X="13" Y="4" Width="1.5" />
+    <AssociationLine Name="Column" Type="NickField.TableDrivenData.Lib.IColumn" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.375" Y="4" />
+        <Point X="13.375" Y="2.582" />
+        <Point X="11.25" Y="2.582" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>ICellData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Column" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="NickField.TableDrivenData.Lib.ITable">
+    <Position X="14.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>ITable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NickField.TableDrivenData.Lib.IReadService">
+    <Position X="17.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IReadService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NickField.TableDrivenData.Lib.IConstituentRowRepository">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAABAAAAAABAAAAAAAAAAAAIAAAAAAAAAAIAAA=</HashCode>
+      <FileName>IConstituentRowRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NickField.TableDrivenData.Lib.ISubscribableTableData">
+    <Position X="4" Y="0.5" Width="2" />
+    <AssociationLine Name="Table" Type="NickField.TableDrivenData.Lib.ITable" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="0.594" />
+        <Point X="15.562" Y="0.594" />
+        <Point X="15.562" Y="2.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISubscribableTableData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Table" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="NickField.TableDrivenData.Lib.ITableQuery">
+    <Position X="10" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>ITableQuery.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
